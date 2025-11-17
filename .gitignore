@@ -1,3 +1,60 @@
+# ============================================
+# SECRETS - NEVER COMMIT THESE! 🔒
+# ============================================
+.env
+*.env
+.env.*
+config/secrets.json
+credentials.json
+api_keys.txt
+
+# ============================================
+# PYTHON
+# ============================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+build/
+*.egg-info/
+dist/
+
+# ============================================
+# USER DATA (Privacy Protection)
+# ============================================
+profiles/*.json
+!profiles/.gitkeep
+cache.json
+*.log
+
+# ============================================
+# IDE / EDITOR FILES
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ============================================
+# OPERATING SYSTEM
+# ============================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================
+# PROJECT SPECIFIC
+# ============================================
+test_output/
+temp/
+*.tmp
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
