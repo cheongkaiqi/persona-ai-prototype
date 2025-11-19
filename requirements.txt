@@ -1,0 +1,63 @@
+
+# ============================================
+# PERSONA AI - PYTHON DEPENDENCIES
+# ============================================
+#
+# INSTALLATION:
+# pip install -r requirements.txt
+#
+# ============================================
+
+# --------------------------------------------
+# CORE DEPENDENCIES (Required)
+# --------------------------------------------
+
+# OpenAI API client
+openai==1.3.0
+
+# Streamlit web framework for UI
+streamlit==1.35.0
+# Environment variable management
+python-dotenv==1.0.0
+
+
+# --------------------------------------------
+# DATA HANDLING (Required)
+# --------------------------------------------
+
+# JSON handling is built into Python, but these are useful:
+# (uncomment if you need them)
+
+# pandas==2.1.3              # Data manipulation
+# numpy==1.26.2              # Numerical operations
+
+
+# --------------------------------------------
+# TESTING (Optional - for Week 3+)
+# --------------------------------------------
+# Uncomment when you start writing tests
+
+# pytest==7.4.3              # Testing framework
+# pytest-cov==4.1.0          # Test coverage
+
+pytest>=8.2.1
+pandas>=2.2.0
+numpy>=1.26.0
+altair>=5.3.0
+vegafusion>=1.6.6
+# --------------------------------------------
+# DEVELOPMENT TOOLS (Optional)
+# --------------------------------------------
+# Uncomment if you want these helpers
+
+# black==23.11.0             # Code formatter
+# flake8==6.1.0              # Code linter
+# ipython==8.17.2            # Better Python shell
+
+
+# --------------------------------------------
+# NOTES
+# --------------------------------------------
+# Version pinning (==) ensures consistency
+# Update versions carefully and test
+# Run 'pip freeze > requirements.txt' to capture exact versions
