@@ -1,6 +1,6 @@
 # 🎓 Persona AI - Personalized Learning Assistant
 
-> An emotionally-aware AI tutor that adapts to individual learning styles, energy levels, and academic emotions, with human oversight at every step.
+> An emotionally-aware AI tutor that adapts to individual knowledge background, energy levels, and academic emotions, with human oversight at every step.
 
 ## 📋 Table of Contents
 
