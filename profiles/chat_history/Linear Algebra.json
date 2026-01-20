@@ -1,0 +1,108 @@
+{
+  "sessions": {
+    "2026-01-15": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "What is linear algebra overall?",
+          "timestamp": "2026-01-15T00:52:18.450805",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Linear Algebra is the math of vectors and matrices! Let me explain with examples first:\n\n**Real-World Uses:**\n- 🎮 Video games: Moving and rotating characters\n- 📱 Image filters: Blurring, sharpening photos\n- 🤖 Machine Learning: Almost everything!\n- 🔍 Google: PageRank algorithm\n\n**Core Concepts:**\n\n**1. Vectors** - Arrows with direction and magnitude\n```\n→ v = [3, 4]  (point in 2D space)\n```\n\n**2. Matrices** - Grids of numbers that transform vectors\n```\nA = [1  2]\n    [3  4]\n```\n\n**3. Linear Transformations** - Stretching, rotating, flipping space\n\n**Why It Matters for CS:**\n- Graphics: Every rotation, scaling uses matrices\n- ML: Data is stored as matrices, weights multiply them\n- Games: Physics, camera movements\n- Data: Dimensionality reduction (PCA)\n\n**Simple Example: Scaling a Point**\n```python\n# Original point\npoint = [2, 3]\n\n# Scale by 2\nscale_matrix = [[2, 0],\n                [0, 2]]\n\n# Result: [4, 6] - doubled!\n```\n\nWant to dive into vectors, matrices, or transformations first?",
+          "timestamp": "2026-01-15T00:52:31.304410",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        },
+        {
+          "role": "user",
+          "content": "What is a vector space?",
+          "timestamp": "2026-01-15T02:38:48.051960",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Great question! Let me explain with an analogy:\n\n**Analogy: A Playground for Vectors**\n\nThink of a vector space as a \"playground\" where vectors can play by certain rules:\n- You can add any two vectors and stay in the playground ✓\n- You can stretch/shrink vectors and stay in the playground ✓\n\n**Formal Definition:**\nA vector space is a collection of vectors where:\n1. Adding vectors keeps you in the space\n2. Multiplying by numbers keeps you in the space\n\n**Example: 2D Plane (R²)**\n```\n    ↑ y\n    │    • (3,4)\n    │   ╱\n    │  ╱ vector\n    │ ╱\n    └──────→ x\n```\n\nAny point (x, y) is in this space. Add any two points → still a point in the space!\n\n**What's NOT a Vector Space:**\n\nPositive numbers only ✗ Why?\n- Take vector [2, 3]\n- Multiply by -1 → [-2, -3]\n- Oops! Negative numbers left the \"positive only\" space!\n\n**The 8 Rules (Axioms):**\n1. Closure under addition\n2. Closure under scalar multiplication\n3. Associativity of addition\n4. Commutativity of addition\n5. Additive identity (zero vector exists)\n6. Additive inverse (negatives exist)\n7. Distributive properties (2 rules)\n8. Scalar multiplication identity (1·v = v)\n\n**Why Care?**\n- ML: Feature spaces are vector spaces\n- Graphics: 3D space is a vector space\n- Allows us to use all the nice linear algebra tools!\n\nWant me to prove why positive numbers fail as a vector space?",
+          "timestamp": "2026-01-15T02:39:02.334090",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Vector Spaces Introduction",
+      "topics": ["linear algebra intro", "vectors", "vector spaces", "axioms"],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 8,
+          "motivation": 8,
+          "timestamp": "2026-01-15T00:50:00.000000"
+        }
+      }
+    },
+    "2026-01-11": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "How do I multiply matrices?",
+          "timestamp": "2026-01-11T10:00:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Matrix multiplication seems tricky at first, but I'll break it down!\n\n**The Key Rule:**\nRow × Column = One number\n\n**Visual Example:**\n```\nA (2×3)         B (3×2)         C (2×2)\n[1  2  3]   ×   [7   8]    =   [?  ?]\n[4  5  6]       [9  10]        [?  ?]\n                [11 12]\n```\n\n**Step-by-Step for C[0,0]:**\n```\nRow 0 of A: [1, 2, 3]\nCol 0 of B: [7, 9, 11]\n\nMultiply pairs: 1×7 + 2×9 + 3×11\n              = 7 + 18 + 33\n              = 58 ✓\n```\n\n**The Full Result:**\n```\nC[0,0] = 1×7 + 2×9 + 3×11 = 58\nC[0,1] = 1×8 + 2×10 + 3×12 = 64\nC[1,0] = 4×7 + 5×9 + 6×11 = 139\nC[1,1] = 4×8 + 5×10 + 6×12 = 154\n\nC = [58   64]\n    [139  154]\n```\n\n**Important Rules:**\n- Dimensions must match: A(m×n) × B(n×p) = C(m×p)\n- Order matters! A×B ≠ B×A (usually)\n\n**Python Code:**\n```python\nimport numpy as np\n\nA = np.array([[1, 2, 3],\n              [4, 5, 6]])\n              \nB = np.array([[7, 8],\n              [9, 10],\n              [11, 12]])\n\nC = A @ B  # or np.matmul(A, B)\nprint(C)\n# [[ 58  64]\n#  [139 154]]\n```\n\nWant to practice with another example?",
+          "timestamp": "2026-01-11T10:05:00.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Matrix Multiplication Tutorial",
+      "topics": ["matrix multiplication", "numpy", "linear algebra operations"],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 4,
+          "motivation": 6,
+          "timestamp": "2026-01-11T09:58:00.000000"
+        }
+      }
+    },
+    "2026-01-05": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "What are eigenvalues and eigenvectors?",
+          "timestamp": "2026-01-05T16:00:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "This is a tricky concept, so let's start with intuition!\n\n**The Big Idea:**\nWhen you multiply a matrix by most vectors, they change direction AND length.\nBut special vectors only change LENGTH, not direction!\n\n**Analogy: Stretching a Rubber Sheet**\nImagine stretching a rubber sheet:\n- Most points move in complicated ways\n- But some lines just stretch longer (or shorter)\n- Those special directions = eigenvectors!\n- How much they stretch = eigenvalues!\n\n**Visual:**\n```\nBefore:          After multiplying by A:\n    ↑                    ↑↑↑\n    │                    │││  (stretched 3x)\n  ──┼──→              ──┼┼┼──→→→ (stretched 2x)\n    │                    │││\n    ↓                    ↓↓↓\n\nEigenvectors: ↑ and →\nEigenvalues: 3 (vertical), 2 (horizontal)\n```\n\n**Math Definition:**\n```\nA × v = λ × v\n\nWhere:\n- A = matrix\n- v = eigenvector (the special direction)\n- λ = eigenvalue (the stretch factor)\n```\n\n**Why It Matters:**\n- **PCA**: Find main directions in data\n- **Google PageRank**: Eigenvector of link matrix\n- **Stability**: Eigenvalues tell if systems explode or stabilize\n- **Quantum Physics**: Energy levels!\n\n**Simple Example:**\n```python\nimport numpy as np\n\nA = np.array([[3, 0],\n              [0, 2]])\n\neigenvalues, eigenvectors = np.linalg.eig(A)\nprint(\"Eigenvalues:\", eigenvalues)   # [3, 2]\nprint(\"Eigenvectors:\\n\", eigenvectors)\n```\n\nWant me to walk through how to calculate them by hand?",
+          "timestamp": "2026-01-05T16:05:00.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Eigenvalues & Eigenvectors",
+      "topics": ["eigenvalues", "eigenvectors", "PCA connection"],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 3,
+          "motivation": 5,
+          "timestamp": "2026-01-05T15:58:00.000000"
+        }
+      }
+    }
+  },
+  "global_context": {
+    "topics_covered": ["linear algebra intro", "vectors", "vector spaces", "matrix multiplication", "eigenvalues"],
+    "total_sessions": 3,
+    "last_updated": "2026-01-15"
+  }
+}

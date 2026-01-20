@@ -4,5 +4,11 @@
     "Time spent on the subject": "30 minutes",
     "Mood": "motivated but overwhelmed",
     "Satisfaction level": 7
+  },
+  "2026-01-10": {
+    "topics_covered": "recursion",
+    "study_time": "15 minutes",
+    "confidence": 5,
+    "satisfaction": 6
   }
 }

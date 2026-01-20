@@ -1,19 +1,93 @@
 {
-  "2025-12-10": [
-    {
-      "role": "user",
-      "content": "What is Data Science?",
-      "timestamp": "2025-12-10T18:16:28.670556",
-      "feedback": {}
+  "sessions": {
+    "2026-01-13": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "What's the data science workflow?",
+          "timestamp": "2026-01-13T11:00:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Let me walk you through the data science workflow step by step!\n\n**The Data Science Pipeline:**\n\n```\n1. Question → 2. Data → 3. Clean → 4. Explore → 5. Model → 6. Deploy\n```\n\n**Step 1: Define the Question**\n- What problem are we solving?\n- Example: \"Can we predict which customers will cancel their subscription?\"\n\n**Step 2: Collect Data**\n- Gather relevant data from databases, APIs, files\n- Sources: SQL databases, CSV files, web scraping, APIs\n\n**Step 3: Clean the Data** (Usually takes 60-80% of time!)\n- Handle missing values\n- Remove duplicates\n- Fix inconsistencies\n- Example: Customer age = -5? That's invalid!\n\n**Step 4: Explore (EDA)**\n- Visualize patterns\n- Calculate statistics\n- Find correlations\n- Tools: pandas, matplotlib, seaborn\n\n**Step 5: Model**\n- Choose algorithm based on problem type\n- Train and evaluate\n- Tune for better performance\n\n**Step 6: Deploy & Monitor**\n- Put model into production\n- Track performance over time\n- Update as needed\n\n**Real Example: Netflix**\n1. Question: \"What should we recommend?\"\n2. Data: Viewing history, ratings, time spent\n3. Clean: Remove bots, fix errors\n4. Explore: Find viewing patterns\n5. Model: Recommendation algorithm\n6. Deploy: The \"Because you watched...\" feature!\n\nWant me to dive deeper into any step?",
+          "timestamp": "2026-01-13T11:05:00.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Data Science Workflow",
+      "topics": ["data science workflow", "EDA", "data pipeline"],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 6,
+          "motivation": 7,
+          "timestamp": "2026-01-13T10:58:00.000000"
+        }
+      }
     },
-    {
-      "role": "assistant",
-      "content": "Data Science is an interdisciplinary field that combines various techniques from statistics, computer science, and domain expertise to extract meaningful insights from structured and unstructured data. Here\u2019s a step-by-step breakdown of its key components:\n\n1. **Data Collection**: This involves gathering data from various sources, such as databases, web scraping, surveys, or sensors. It can be structured (like spreadsheets) or unstructured (like text or images).\n\n2. **Data Cleaning**: Once collected, the data often needs to be cleaned and preprocessed. This can include removing duplicates, handling missing values, and correcting inconsistencies.\n\n3. **Data Exploration and Analysis**: Here, data scientists analyze the data to uncover patterns, trends, and insights. This often involves statistical analysis and visualization techniques to understand the data better.\n\n4. **Model Building**: Data scientists build predictive models using various algorithms. This stage often involves machine learning techniques, where models learn from data to make predictions or decisions.\n\n5. **Model Evaluation**: After building a model, it's essential to evaluate its performance using different metrics (like accuracy, precision, recall) to ensure it generalizes well to unseen data.\n\n6. **Deployment**: Once a model is validated, it can be deployed in real-world applications, such as recommendation systems, fraud detection, or predictive maintenance.\n\n7. **Communication of Results**: Finally, data scientists must communicate their findings clearly and effectively to stakeholders, often using visualizations and reports to make the insights actionable.\n\n### Real-World Example:\nConsider a retail company that wants to understand customer purchasing behavior. They can collect data from sales transactions, clean it to remove errors, analyze it to find trends (like seasonal buying patterns), build a predictive model to forecast future sales, and then present their findings to the marketing department to refine their strategies.\n\nIf you have any specific areas within Data Science that you'd like to dive deeper into or explore with examples, just let me know!",
-      "timestamp": "2025-12-10T18:16:39.955183",
-      "feedback": {
-        "thumbs_up": 1,
-        "thumbs_down": 0
+    "2026-01-08": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "How do I handle missing data in pandas?",
+          "timestamp": "2026-01-08T14:00:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Great practical question! Let me show you the main techniques:\n\n**1. Find Missing Data First**\n```python\nimport pandas as pd\n\n# Check for missing values\ndf.isnull().sum()  # Count missing per column\ndf.isnull().sum().sum()  # Total missing\n```\n\n**2. Option A: Remove Rows with Missing Data**\n```python\n# Drop rows with ANY missing value\ndf_clean = df.dropna()\n\n# Drop rows only if specific column is missing\ndf_clean = df.dropna(subset=['important_column'])\n```\n⚠️ **When to use**: You have lots of data and few missing values\n\n**3. Option B: Fill with a Value**\n```python\n# Fill with a specific value\ndf['age'].fillna(0, inplace=True)\n\n# Fill with mean (good for numeric data)\ndf['age'].fillna(df['age'].mean(), inplace=True)\n\n# Fill with median (better if outliers exist)\ndf['salary'].fillna(df['salary'].median(), inplace=True)\n\n# Fill with mode (good for categories)\ndf['city'].fillna(df['city'].mode()[0], inplace=True)\n```\n\n**4. Option C: Forward/Backward Fill (Time Series)**\n```python\n# Use previous value\ndf['temperature'].fillna(method='ffill', inplace=True)\n\n# Use next value\ndf['temperature'].fillna(method='bfill', inplace=True)\n```\n\n**Quick Decision Guide:**\n| Data Type | Missing % | Recommendation |\n|-----------|-----------|----------------|\n| Numeric | < 5% | Fill with mean/median |\n| Numeric | > 20% | Consider dropping column |\n| Category | Any | Fill with mode or 'Unknown' |\n| Time series | Any | Forward fill |\n\nWant to practice with a sample dataset?",
+          "timestamp": "2026-01-08T14:05:00.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Handling Missing Data",
+      "topics": ["pandas", "missing data", "data cleaning", "fillna"],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 7,
+          "motivation": 8,
+          "timestamp": "2026-01-08T13:58:00.000000"
+        }
+      }
+    },
+    "2025-12-10": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "What is Data Science?",
+          "timestamp": "2025-12-10T18:16:28.670556",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Data Science is the art of extracting insights from data! Let me break it down:\n\n**Simple Definition:**\nUsing data + statistics + programming to answer questions and solve problems.\n\n**The Three Pillars:**\n```\n        Data Science\n            /|\\  \n           / | \\ \n          /  |  \\\nMath/Stats  CS  Domain Knowledge\n```\n\n**What Data Scientists Do:**\n1. **Ask Questions**: \"Why are customers leaving?\"\n2. **Collect Data**: Get relevant information\n3. **Analyze**: Find patterns and insights\n4. **Communicate**: Tell the story with visuals\n5. **Act**: Make data-driven decisions\n\n**Tools You'll Learn:**\n- Python (pandas, numpy, scikit-learn)\n- SQL for databases\n- Visualization (matplotlib, seaborn)\n- Statistics fundamentals\n\n**Career Applications:**\n- Business Analytics\n- Machine Learning Engineer\n- Data Analyst\n- Research Scientist\n\nSince you're doing CS, you already have the programming foundation. Data Science adds the statistical thinking and domain application!\n\nWhat aspect interests you most?",
+          "timestamp": "2025-12-10T18:16:39.955183",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Data Science Introduction",
+      "topics": ["data science intro", "career paths", "tools overview"],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 5,
+          "motivation": 7,
+          "timestamp": "2025-12-10T18:15:00.000000"
+        }
       }
     }
-  ]
+  },
+  "global_context": {
+    "topics_covered": ["data science intro", "workflow", "pandas", "missing data", "EDA"],
+    "total_sessions": 3,
+    "last_updated": "2026-01-13"
+  }
 }
