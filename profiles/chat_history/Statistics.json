@@ -1,145 +1,65 @@
 {
-  "2025-12-05": [
-    {
-      "role": "user",
-      "content": "What do you know about this subject?",
-      "timestamp": "2025-12-08T19:13:20.774126",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "Statistics is a branch of mathematics that deals with collecting, analyzing, interpreting, presenting, and organizing data. It provides tools for understanding variability and making informed decisions based on data.\n\nHere are some key concepts in statistics:\n\n1. **Descriptive Statistics**: This involves summarizing and describing the main features of a dataset. Common measures include:\n   - **Mean**: The average value.\n   - **Median**: The middle value when data is ordered.\n   - **Mode**: The value that appears most frequently.\n   - **Standard Deviation**: A measure of the amount of variation or dispersion in a set of values.\n\n2. **Inferential Statistics**: This allows us to make predictions or inferences about a population based on a sample. Key concepts include:\n   - **Hypothesis Testing**: A method to test an assumption regarding a population parameter.\n   - **Confidence Intervals**: A range of values used to estimate a population parameter, giving a degree of certainty.\n\n3. **Probability**: The foundation of statistics that deals with the likelihood of events occurring. Understanding concepts like independent and dependent events, conditional probability, and probability distributions is crucial.\n\n4. **Regression and Correlation**: These are techniques used to understand relationships between variables. For example:\n   - **Linear Regression**: Analyzing the relationship between two continuous variables.\n   - **Correlation Coefficient**: A measure that describes the strength and direction of a relationship between two variables.\n\n5. **Data Visualization**: Graphical representations of data, such as histograms, scatter plots, and box plots, help in understanding patterns and trends.\n\nIf you have specific areas within statistics you want to explore or if you prefer examples or step-by-step explanations, just let me know!",
-      "timestamp": "2025-12-08T19:13:27.909817",
-      "feedback": {
-        "thumbs_up": 1,
-        "thumbs_down": 0
+  "sessions": {
+    "2026-01-12": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "What's the difference between mean, median, and mode?",
+          "timestamp": "2026-01-12T10:00:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Great question! These are the three main ways to find the \"center\" of data. Let me explain with examples:\n\n**Example Data: Test Scores**\n```\nScores: [70, 75, 80, 80, 85, 90, 100]\n```\n\n**1. Mean (Average)** 📊\n```\nSum all values ÷ Count of values\n\n70+75+80+80+85+90+100 = 580\n580 ÷ 7 = 82.86\n```\n- **Pros**: Uses all data points\n- **Cons**: Affected by outliers!\n\n**2. Median (Middle Value)** 📍\n```\nSort data, pick the middle one\n\n[70, 75, 80, →80←, 85, 90, 100]\n              ↑\n         Median = 80\n```\n- **Pros**: Not affected by outliers\n- **Cons**: Ignores most values\n\n**3. Mode (Most Frequent)** 🔢\n```\nWhich value appears most often?\n\n80 appears 2 times (most frequent)\nMode = 80\n```\n- **Pros**: Works with categories too\n- **Cons**: Might not exist or be multiple\n\n**When to Use What:**\n\n| Situation | Best Choice |\n|-----------|-------------|\n| Normal data | Mean |\n| Has outliers | Median |\n| Categorical data | Mode |\n| Salary data | Median (CEOs skew mean!) |\n\n**Outlier Example:**\n```\nSalaries: [40k, 45k, 50k, 55k, 10M]\n\nMean: ~2 million (misleading! 🚫)\nMedian: 50k (realistic! ✓)\n```\n\n**Python Code:**\n```python\nimport statistics\n\nscores = [70, 75, 80, 80, 85, 90, 100]\n\nprint(statistics.mean(scores))    # 82.86\nprint(statistics.median(scores))  # 80\nprint(statistics.mode(scores))    # 80\n```\n\nWant to practice with a dataset?",
+          "timestamp": "2026-01-12T10:05:00.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Mean, Median & Mode",
+      "topics": ["descriptive statistics", "central tendency", "mean", "median", "mode"],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 7,
+          "motivation": 6,
+          "timestamp": "2026-01-12T09:58:00.000000"
+        }
       }
     },
-    {
-      "role": "user",
-      "content": "What do you know about this subject?",
-      "timestamp": "2025-12-08T19:13:20.774126",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "Statistics is a branch of mathematics that deals with collecting, analyzing, interpreting, presenting, and organizing data. It provides tools for understanding variability and making informed decisions based on data.\n\nHere are some key concepts in statistics:\n\n1. **Descriptive Statistics**: This involves summarizing and describing the main features of a dataset. Common measures include:\n   - **Mean**: The average value.\n   - **Median**: The middle value when data is ordered.\n   - **Mode**: The value that appears most frequently.\n   - **Standard Deviation**: A measure of the amount of variation or dispersion in a set of values.\n\n2. **Inferential Statistics**: This allows us to make predictions or inferences about a population based on a sample. Key concepts include:\n   - **Hypothesis Testing**: A method to test an assumption regarding a population parameter.\n   - **Confidence Intervals**: A range of values used to estimate a population parameter, giving a degree of certainty.\n\n3. **Probability**: The foundation of statistics that deals with the likelihood of events occurring. Understanding concepts like independent and dependent events, conditional probability, and probability distributions is crucial.\n\n4. **Regression and Correlation**: These are techniques used to understand relationships between variables. For example:\n   - **Linear Regression**: Analyzing the relationship between two continuous variables.\n   - **Correlation Coefficient**: A measure that describes the strength and direction of a relationship between two variables.\n\n5. **Data Visualization**: Graphical representations of data, such as histograms, scatter plots, and box plots, help in understanding patterns and trends.\n\nIf you have specific areas within statistics you want to explore or if you prefer examples or step-by-step explanations, just let me know!",
-      "timestamp": "2025-12-08T19:13:27.909817",
-      "feedback": {
-        "thumbs_up": 1,
-        "thumbs_down": 0
-      }
-    },
-    {
-      "role": "user",
-      "content": "What do you know about this subject?",
-      "timestamp": "2025-12-08T19:13:20.774126",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "Statistics is a branch of mathematics that deals with collecting, analyzing, interpreting, presenting, and organizing data. It provides tools for understanding variability and making informed decisions based on data.\n\nHere are some key concepts in statistics:\n\n1. **Descriptive Statistics**: This involves summarizing and describing the main features of a dataset. Common measures include:\n   - **Mean**: The average value.\n   - **Median**: The middle value when data is ordered.\n   - **Mode**: The value that appears most frequently.\n   - **Standard Deviation**: A measure of the amount of variation or dispersion in a set of values.\n\n2. **Inferential Statistics**: This allows us to make predictions or inferences about a population based on a sample. Key concepts include:\n   - **Hypothesis Testing**: A method to test an assumption regarding a population parameter.\n   - **Confidence Intervals**: A range of values used to estimate a population parameter, giving a degree of certainty.\n\n3. **Probability**: The foundation of statistics that deals with the likelihood of events occurring. Understanding concepts like independent and dependent events, conditional probability, and probability distributions is crucial.\n\n4. **Regression and Correlation**: These are techniques used to understand relationships between variables. For example:\n   - **Linear Regression**: Analyzing the relationship between two continuous variables.\n   - **Correlation Coefficient**: A measure that describes the strength and direction of a relationship between two variables.\n\n5. **Data Visualization**: Graphical representations of data, such as histograms, scatter plots, and box plots, help in understanding patterns and trends.\n\nIf you have specific areas within statistics you want to explore or if you prefer examples or step-by-step explanations, just let me know!",
-      "timestamp": "2025-12-08T19:13:27.909817",
-      "feedback": {
-        "thumbs_up": 0,
-        "thumbs_down": 1
-      }
-    }
-  ],
-  "2025-12-06": [
-    {
-      "role": "user",
-      "content": "What do you know about this subject?",
-      "timestamp": "2025-12-08T19:13:20.774126",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "Statistics is a branch of mathematics that deals with collecting, analyzing, interpreting, presenting, and organizing data. It provides tools for understanding variability and making informed decisions based on data.\n\nHere are some key concepts in statistics:\n\n1. **Descriptive Statistics**: This involves summarizing and describing the main features of a dataset. Common measures include:\n   - **Mean**: The average value.\n   - **Median**: The middle value when data is ordered.\n   - **Mode**: The value that appears most frequently.\n   - **Standard Deviation**: A measure of the amount of variation or dispersion in a set of values.\n\n2. **Inferential Statistics**: This allows us to make predictions or inferences about a population based on a sample. Key concepts include:\n   - **Hypothesis Testing**: A method to test an assumption regarding a population parameter.\n   - **Confidence Intervals**: A range of values used to estimate a population parameter, giving a degree of certainty.\n\n3. **Probability**: The foundation of statistics that deals with the likelihood of events occurring. Understanding concepts like independent and dependent events, conditional probability, and probability distributions is crucial.\n\n4. **Regression and Correlation**: These are techniques used to understand relationships between variables. For example:\n   - **Linear Regression**: Analyzing the relationship between two continuous variables.\n   - **Correlation Coefficient**: A measure that describes the strength and direction of a relationship between two variables.\n\n5. **Data Visualization**: Graphical representations of data, such as histograms, scatter plots, and box plots, help in understanding patterns and trends.\n\nIf you have specific areas within statistics you want to explore or if you prefer examples or step-by-step explanations, just let me know!",
-      "timestamp": "2025-12-08T19:13:27.909817",
-      "feedback": {
-        "thumbs_up": 0,
-        "thumbs_down": 1
+    "2026-01-08": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "What is standard deviation and why does it matter?",
+          "timestamp": "2026-01-08T15:00:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Standard deviation tells you how \"spread out\" your data is. Let me show you!\n\n**Intuition: Two Classes' Test Scores**\n```\nClass A: [80, 80, 80, 80, 80]  Mean = 80\nClass B: [60, 70, 80, 90, 100] Mean = 80\n```\nSame average, but Class B has more variety!\n\n**Standard Deviation:**\n- Class A: σ = 0 (everyone got the same score)\n- Class B: σ = 14.14 (scores are spread out)\n\n**Visual:**\n```\nClass A (low SD):    Class B (high SD):\n        █                    \n        █               █    █\n        █           █   █    █   █\n    ────────────    ────────────────\n    78 79 80 81     60 70 80 90 100\n```\n\n**How to Calculate (Step by Step):**\n```\nData: [2, 4, 4, 4, 5, 5, 7, 9]\n\n1. Find mean: (2+4+4+4+5+5+7+9)/8 = 5\n\n2. Find differences from mean:\n   (2-5)² = 9\n   (4-5)² = 1  (three times)\n   (5-5)² = 0  (two times)\n   (7-5)² = 4\n   (9-5)² = 16\n\n3. Average the squared differences:\n   (9+1+1+1+0+0+4+16)/8 = 4\n\n4. Square root: √4 = 2\n\nStandard Deviation = 2\n```\n\n**The 68-95-99.7 Rule:**\nFor normal distributions:\n```\n       68% within 1 SD\n    ├────────┼────────┤\n    95% within 2 SD\n ├──────────────────────┤\n 99.7% within 3 SD\n├────────────────────────────┤\n```\n\n**Why It Matters:**\n- Quality control: Is product consistent?\n- Finance: How risky is an investment?\n- Science: How reliable are results?\n\n**Python:**\n```python\nimport statistics\n\ndata = [2, 4, 4, 4, 5, 5, 7, 9]\nprint(statistics.stdev(data))  # 2.14 (sample SD)\n```\n\nWant to explore variance or other spread measures?",
+          "timestamp": "2026-01-08T15:05:00.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Standard Deviation Basics",
+      "topics": ["standard deviation", "variance", "spread", "68-95-99.7 rule"],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 5,
+          "motivation": 6,
+          "timestamp": "2026-01-08T14:58:00.000000"
+        }
       }
     }
-  ],
-  "2025-12-07": [
-    {
-      "role": "user",
-      "content": "What do you know about this subject?",
-      "timestamp": "2025-12-08T19:13:20.774126",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "Statistics is a branch of mathematics that deals with collecting, analyzing, interpreting, presenting, and organizing data. It provides tools for understanding variability and making informed decisions based on data.\n\nHere are some key concepts in statistics:\n\n1. **Descriptive Statistics**: This involves summarizing and describing the main features of a dataset. Common measures include:\n   - **Mean**: The average value.\n   - **Median**: The middle value when data is ordered.\n   - **Mode**: The value that appears most frequently.\n   - **Standard Deviation**: A measure of the amount of variation or dispersion in a set of values.\n\n2. **Inferential Statistics**: This allows us to make predictions or inferences about a population based on a sample. Key concepts include:\n   - **Hypothesis Testing**: A method to test an assumption regarding a population parameter.\n   - **Confidence Intervals**: A range of values used to estimate a population parameter, giving a degree of certainty.\n\n3. **Probability**: The foundation of statistics that deals with the likelihood of events occurring. Understanding concepts like independent and dependent events, conditional probability, and probability distributions is crucial.\n\n4. **Regression and Correlation**: These are techniques used to understand relationships between variables. For example:\n   - **Linear Regression**: Analyzing the relationship between two continuous variables.\n   - **Correlation Coefficient**: A measure that describes the strength and direction of a relationship between two variables.\n\n5. **Data Visualization**: Graphical representations of data, such as histograms, scatter plots, and box plots, help in understanding patterns and trends.\n\nIf you have specific areas within statistics you want to explore or if you prefer examples or step-by-step explanations, just let me know!",
-      "timestamp": "2025-12-08T19:13:27.909817",
-      "feedback": {
-        "thumbs_up": 0,
-        "thumbs_down": 1
-      }
-    }
-  ],
-  "2025-12-08": [
-    {
-      "role": "user",
-      "content": "What do you know about this subject?",
-      "timestamp": "2025-12-08T19:13:20.774126",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "Statistics is a branch of mathematics that deals with collecting, analyzing, interpreting, presenting, and organizing data. It provides tools for understanding variability and making informed decisions based on data.\n\nHere are some key concepts in statistics:\n\n1. **Descriptive Statistics**: This involves summarizing and describing the main features of a dataset. Common measures include:\n   - **Mean**: The average value.\n   - **Median**: The middle value when data is ordered.\n   - **Mode**: The value that appears most frequently.\n   - **Standard Deviation**: A measure of the amount of variation or dispersion in a set of values.\n\n2. **Inferential Statistics**: This allows us to make predictions or inferences about a population based on a sample. Key concepts include:\n   - **Hypothesis Testing**: A method to test an assumption regarding a population parameter.\n   - **Confidence Intervals**: A range of values used to estimate a population parameter, giving a degree of certainty.\n\n3. **Probability**: The foundation of statistics that deals with the likelihood of events occurring. Understanding concepts like independent and dependent events, conditional probability, and probability distributions is crucial.\n\n4. **Regression and Correlation**: These are techniques used to understand relationships between variables. For example:\n   - **Linear Regression**: Analyzing the relationship between two continuous variables.\n   - **Correlation Coefficient**: A measure that describes the strength and direction of a relationship between two variables.\n\n5. **Data Visualization**: Graphical representations of data, such as histograms, scatter plots, and box plots, help in understanding patterns and trends.\n\nIf you have specific areas within statistics you want to explore or if you prefer examples or step-by-step explanations, just let me know!",
-      "timestamp": "2025-12-08T19:13:27.909817",
-      "feedback": {
-        "thumbs_up": 1,
-        "thumbs_down": 0
-      }
-    },
-    {
-      "role": "user",
-      "content": "What do you know about this subject?",
-      "timestamp": "2025-12-08T19:13:20.774126",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "Statistics is a branch of mathematics that deals with collecting, analyzing, interpreting, presenting, and organizing data. It provides tools for understanding variability and making informed decisions based on data.\n\nHere are some key concepts in statistics:\n\n1. **Descriptive Statistics**: This involves summarizing and describing the main features of a dataset. Common measures include:\n   - **Mean**: The average value.\n   - **Median**: The middle value when data is ordered.\n   - **Mode**: The value that appears most frequently.\n   - **Standard Deviation**: A measure of the amount of variation or dispersion in a set of values.\n\n2. **Inferential Statistics**: This allows us to make predictions or inferences about a population based on a sample. Key concepts include:\n   - **Hypothesis Testing**: A method to test an assumption regarding a population parameter.\n   - **Confidence Intervals**: A range of values used to estimate a population parameter, giving a degree of certainty.\n\n3. **Probability**: The foundation of statistics that deals with the likelihood of events occurring. Understanding concepts like independent and dependent events, conditional probability, and probability distributions is crucial.\n\n4. **Regression and Correlation**: These are techniques used to understand relationships between variables. For example:\n   - **Linear Regression**: Analyzing the relationship between two continuous variables.\n   - **Correlation Coefficient**: A measure that describes the strength and direction of a relationship between two variables.\n\n5. **Data Visualization**: Graphical representations of data, such as histograms, scatter plots, and box plots, help in understanding patterns and trends.\n\nIf you have specific areas within statistics you want to explore or if you prefer examples or step-by-step explanations, just let me know!",
-      "timestamp": "2025-12-08T19:13:27.909817",
-      "feedback": {
-        "thumbs_up": 0,
-        "thumbs_down": 1
-      }
-    },
-    {
-      "role": "user",
-      "content": "What do you know about this subject?",
-      "timestamp": "2025-12-08T19:13:20.774126",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "Statistics is a branch of mathematics that deals with collecting, analyzing, interpreting, presenting, and organizing data. It provides tools for understanding variability and making informed decisions based on data.\n\nHere are some key concepts in statistics:\n\n1. **Descriptive Statistics**: This involves summarizing and describing the main features of a dataset. Common measures include:\n   - **Mean**: The average value.\n   - **Median**: The middle value when data is ordered.\n   - **Mode**: The value that appears most frequently.\n   - **Standard Deviation**: A measure of the amount of variation or dispersion in a set of values.\n\n2. **Inferential Statistics**: This allows us to make predictions or inferences about a population based on a sample. Key concepts include:\n   - **Hypothesis Testing**: A method to test an assumption regarding a population parameter.\n   - **Confidence Intervals**: A range of values used to estimate a population parameter, giving a degree of certainty.\n\n3. **Probability**: The foundation of statistics that deals with the likelihood of events occurring. Understanding concepts like independent and dependent events, conditional probability, and probability distributions is crucial.\n\n4. **Regression and Correlation**: These are techniques used to understand relationships between variables. For example:\n   - **Linear Regression**: Analyzing the relationship between two continuous variables.\n   - **Correlation Coefficient**: A measure that describes the strength and direction of a relationship between two variables.\n\n5. **Data Visualization**: Graphical representations of data, such as histograms, scatter plots, and box plots, help in understanding patterns and trends.\n\nIf you have specific areas within statistics you want to explore or if you prefer examples or step-by-step explanations, just let me know!",
-      "timestamp": "2025-12-08T19:13:27.909817",
-      "feedback": {
-        "thumbs_up": 1,
-        "thumbs_down": 0
-      }
-    },
-    {
-      "role": "user",
-      "content": "What do you know about this subject?",
-      "timestamp": "2025-12-08T19:13:20.774126",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "Statistics is a branch of mathematics that deals with collecting, analyzing, interpreting, presenting, and organizing data. It provides tools for understanding variability and making informed decisions based on data.\n\nHere are some key concepts in statistics:\n\n1. **Descriptive Statistics**: This involves summarizing and describing the main features of a dataset. Common measures include:\n   - **Mean**: The average value.\n   - **Median**: The middle value when data is ordered.\n   - **Mode**: The value that appears most frequently.\n   - **Standard Deviation**: A measure of the amount of variation or dispersion in a set of values.\n\n2. **Inferential Statistics**: This allows us to make predictions or inferences about a population based on a sample. Key concepts include:\n   - **Hypothesis Testing**: A method to test an assumption regarding a population parameter.\n   - **Confidence Intervals**: A range of values used to estimate a population parameter, giving a degree of certainty.\n\n3. **Probability**: The foundation of statistics that deals with the likelihood of events occurring. Understanding concepts like independent and dependent events, conditional probability, and probability distributions is crucial.\n\n4. **Regression and Correlation**: These are techniques used to understand relationships between variables. For example:\n   - **Linear Regression**: Analyzing the relationship between two continuous variables.\n   - **Correlation Coefficient**: A measure that describes the strength and direction of a relationship between two variables.\n\n5. **Data Visualization**: Graphical representations of data, such as histograms, scatter plots, and box plots, help in understanding patterns and trends.\n\nIf you have specific areas within statistics you want to explore or if you prefer examples or step-by-step explanations, just let me know!",
-      "timestamp": "2025-12-08T19:13:27.909817",
-      "feedback": {
-        "thumbs_up": 0,
-        "thumbs_down": 1
-      }
-    }
-  ]
+  },
+  "global_context": {
+    "topics_covered": ["mean", "median", "mode", "standard deviation", "descriptive statistics"],
+    "total_sessions": 2,
+    "last_updated": "2026-01-12"
+  }
 }

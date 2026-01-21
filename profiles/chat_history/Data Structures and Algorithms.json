@@ -1,0 +1,93 @@
+{
+  "sessions": {
+    "2026-01-14": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "Can you explain Big O notation simply?",
+          "timestamp": "2026-01-14T09:00:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Big O notation tells you how your code slows down as data grows. Let me explain with examples!\n\n**The Core Idea:**\n\"If I have 10x more data, how much longer will it take?\"\n\n**Common Big O's (from fastest to slowest):**\n\n```\nO(1)      - Constant     - Same time always\nO(log n)  - Logarithmic  - Barely slows down\nO(n)      - Linear       - Doubles with data\nO(n log n)- Linearithmic - Sorting algorithms\nO(n²)     - Quadratic    - Gets slow fast!\nO(2ⁿ)     - Exponential  - Basically unusable\n```\n\n**Real Examples:**\n\n**O(1) - Constant** ⚡\n```python\ndef get_first(arr):\n    return arr[0]  # Always 1 operation\n```\n\n**O(n) - Linear** 📈\n```python\ndef find_max(arr):\n    max_val = arr[0]\n    for num in arr:  # Goes through ALL elements\n        if num > max_val:\n            max_val = num\n    return max_val\n```\n\n**O(n²) - Quadratic** 🐌\n```python\ndef bubble_sort(arr):\n    for i in range(len(arr)):      # n times\n        for j in range(len(arr)):  # × n times\n            # Compare and swap\n```\n\n**Visual Comparison:**\n```\nItems:     10    100    1000\n──────────────────────────────\nO(1):      1     1      1\nO(log n):  3     7      10\nO(n):      10    100    1000\nO(n²):     100   10000  1000000 😱\n```\n\n**Quick Tips:**\n- See a single loop? → O(n)\n- See nested loops? → O(n²)\n- Dividing in half each time? → O(log n)\n\nWant to practice identifying Big O in code examples?",
+          "timestamp": "2026-01-14T09:05:00.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Big O Notation Explained",
+      "topics": ["Big O", "time complexity", "algorithm analysis"],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 5,
+          "motivation": 7,
+          "timestamp": "2026-01-14T08:58:00.000000"
+        }
+      }
+    },
+    "2026-01-10": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "What's the difference between arrays and linked lists?",
+          "timestamp": "2026-01-10T11:00:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Great fundamental question! Let me compare them visually:\n\n**Array: Apartments in a Building**\n```\n┌───┬───┬───┬───┬───┐\n│ 0 │ 1 │ 2 │ 3 │ 4 │  ← Continuous memory\n└───┴───┴───┴───┴───┘\n  A   B   C   D   E\n```\n- Units are side-by-side\n- Know apartment 3? Go directly there!\n- Want to add a unit? Must rebuild the whole building!\n\n**Linked List: Train Cars**\n```\n┌───┐   ┌───┐   ┌───┐   ┌───┐\n│ A │→→→│ B │→→→│ C │→→→│ D │\n└───┘   └───┘   └───┘   └───┘\n```\n- Cars connected by links\n- Want car C? Start at A, follow the chain\n- Add a car? Just connect it anywhere!\n\n**Comparison Table:**\n\n| Operation | Array | Linked List |\n|-----------|-------|-------------|\n| Access by index | O(1) ⚡ | O(n) 🐌 |\n| Insert at start | O(n) 🐌 | O(1) ⚡ |\n| Insert at end | O(1)* ⚡ | O(n) or O(1)** |\n| Delete | O(n) 🐌 | O(1)*** ⚡ |\n| Memory | Less | More (stores pointers) |\n\n*If space available\n**O(1) if you keep tail pointer\n***Once you've found the node\n\n**When to Use What:**\n\n✅ **Use Array when:**\n- You need fast random access\n- Data size is fixed or rarely changes\n- Memory is tight\n\n✅ **Use Linked List when:**\n- Lots of insertions/deletions\n- Don't know size ahead of time\n- Mostly sequential access\n\n**Python Reality:**\n```python\n# Python list is actually a dynamic array\nmy_list = [1, 2, 3]  # Array under the hood\n\n# For linked list, you'd create a class\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\n```\n\nWant to implement a linked list together?",
+          "timestamp": "2026-01-10T11:05:00.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Arrays vs Linked Lists",
+      "topics": ["arrays", "linked lists", "data structures comparison"],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 6,
+          "motivation": 7,
+          "timestamp": "2026-01-10T10:58:00.000000"
+        }
+      }
+    },
+    "2026-01-07": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "How does binary search work?",
+          "timestamp": "2026-01-07T14:00:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Binary search is like finding a word in a dictionary! Let me show you:\n\n**The Idea:**\nInstead of checking every element, cut the search space in HALF each time.\n\n**Real-World Analogy: Guessing Game**\n```\nI'm thinking of a number 1-100.\n\nBad way (Linear): 1? 2? 3? ... Could take 100 guesses!\n\nGood way (Binary):\n- \"Is it > 50?\" Yes\n- \"Is it > 75?\" No\n- \"Is it > 62?\" Yes\n- \"Is it > 68?\" Yes\n- \"Is it > 71?\" No\n- \"Is it 70?\" YES! (Only 6 guesses!)\n```\n\n**Visual Step-by-Step:**\nFind 23 in: [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]\n\n```\nStep 1: [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]\n                      ↑\n         middle = 16, 23 > 16, go RIGHT\n\nStep 2:              [23, 38, 56, 72, 91]\n                           ↑\n         middle = 56, 23 < 56, go LEFT\n\nStep 3:              [23, 38]\n                       ↑\n         middle = 23, FOUND! ✓\n```\n\n**Python Code:**\n```python\ndef binary_search(arr, target):\n    left = 0\n    right = len(arr) - 1\n    \n    while left <= right:\n        mid = (left + right) // 2\n        \n        if arr[mid] == target:\n            return mid  # Found it!\n        elif arr[mid] < target:\n            left = mid + 1  # Go right\n        else:\n            right = mid - 1  # Go left\n    \n    return -1  # Not found\n\n# Example\nnums = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]\nprint(binary_search(nums, 23))  # Output: 5\n```\n\n**Key Requirements:**\n⚠️ Array MUST be sorted!\n\n**Time Complexity:**\n- O(log n) - Even with 1 billion items, only ~30 steps!\n\n**Compare:**\n| Items | Linear Search | Binary Search |\n|-------|--------------|---------------|\n| 100 | 100 steps | 7 steps |\n| 1,000 | 1,000 steps | 10 steps |\n| 1,000,000 | 1,000,000 steps | 20 steps |\n\nWant to trace through another example together?",
+          "timestamp": "2026-01-07T14:05:00.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Binary Search Tutorial",
+      "topics": ["binary search", "searching algorithms", "O(log n)"],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 6,
+          "motivation": 6,
+          "timestamp": "2026-01-07T13:58:00.000000"
+        }
+      }
+    }
+  },
+  "global_context": {
+    "topics_covered": ["Big O", "arrays", "linked lists", "binary search", "time complexity"],
+    "total_sessions": 3,
+    "last_updated": "2026-01-14"
+  }
+}

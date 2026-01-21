@@ -1,130 +1,200 @@
 {
-  "2025-12-08": [
-    {
-      "role": "user",
-      "content": "How many hours should I study today?",
-      "timestamp": "2025-12-08T19:01:55.759442",
-      "feedback": {}
+  "sessions": {
+    "2026-01-15": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "Hi! I'm feeling a bit overwhelmed today. Can you help me create a study plan?",
+          "timestamp": "2026-01-15T09:30:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "I totally understand that feeling! Let's break this down together step by step.\n\nFirst, let's identify what subjects you need to cover. Based on your focus areas, you're working on Data Structures and Algorithms, Database Systems, Software Engineering, and Linear Algebra.\n\nHere's a simple study plan for today:\n\n1. **Morning (1 hour)**: Start with Linear Algebra - review vector spaces\n2. **Short break (15 min)**: Stretch and grab a snack\n3. **Late morning (45 min)**: Data Structures - practice one algorithm problem\n4. **Lunch break**\n5. **Afternoon (1 hour)**: Software Engineering concepts\n\nRemember, you mentioned you work best in 30-45 minute focused sessions, so feel free to adjust these blocks!\n\nHow does this look? Would you like me to suggest specific topics within each subject?",
+          "timestamp": "2026-01-15T09:30:45.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        },
+        {
+          "role": "user",
+          "content": "That looks good! Can you explain what I should focus on for Linear Algebra today?",
+          "timestamp": "2026-01-15T09:32:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Great choice starting with Linear Algebra!\n\nFor today, I'd suggest focusing on **Vector Spaces** - here's why it's a good starting point:\n\n**What is a Vector Space?**\nThink of it like a \"playground\" where vectors can live and play by certain rules. Any vectors in this space can be:\n- Added together (and stay in the space)\n- Multiplied by numbers (and stay in the space)\n\n**Real-world analogy:**\nImagine a 2D coordinate plane - any point you pick, any direction you move, you're still on that plane. That's a vector space!\n\n**Key things to understand:**\n1. Closure properties (adding vectors keeps you in the space)\n2. The zero vector (every space has an \"origin\")\n3. Basis vectors (the building blocks)\n\n**Practice suggestion:**\nTry to identify if these are vector spaces:\n- All 2D points (x, y) \u2713\n- All positive numbers only \u2717 (why not?)\n\nWant me to walk through why positive numbers don't form a vector space?",
+          "timestamp": "2026-01-15T09:33:30.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Study Plan Creation",
+      "topics": [
+        "study planning",
+        "linear algebra",
+        "vector spaces"
+      ],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 4,
+          "motivation": 4,
+          "timestamp": "2026-01-15T09:29:00.000000"
+        }
+      }
     },
-    {
-      "role": "assistant",
-      "content": "Given your regular study rhythm and focus duration of 1-2 hours, it would be effective to aim for a study session of about 1 to 2 hours today. If you're feeling particularly motivated or if there's a lot to cover, you could also consider splitting that into two shorter sessions with a short break in between. This way, you'll maintain your focus while also giving yourself a chance to recharge! How does that sound?",
-      "timestamp": "2025-12-08T19:02:01.373467",
-      "feedback": {
-        "thumbs_up": 1,
-        "thumbs_down": 0
+    "2026-01-13": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "What are some tips for staying focused while studying?",
+          "timestamp": "2026-01-13T14:00:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Great question! Here are some practical tips tailored to your study style:\n\n**1. Use the Pomodoro Technique (modified for you)**\nSince you focus best in 30-45 minute blocks:\n- Study for 35 minutes\n- Take a 10-minute break\n- After 3 cycles, take a longer 20-minute break\n\n**2. Remove Distractions**\n- Put your phone in another room\n- Use website blockers during study time\n- Let others know you're in \"focus mode\"\n\n**3. Start with Something Manageable**\nYou mentioned you sometimes procrastinate - combat this by:\n- Starting with a small, easy task (5 min review)\n- Building momentum before tackling harder problems\n\n**4. Use Active Learning**\nSince you're example-driven:\n- Don't just read - work through problems\n- Explain concepts out loud (rubber duck debugging for studying!)\n- Create your own examples\n\n**5. Track Your Progress**\nSeeing progress helps motivation:\n- Check off completed topics\n- Note what you learned each session\n\nWhich of these would you like to try first?",
+          "timestamp": "2026-01-13T14:02:00.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        },
+        {
+          "role": "user",
+          "content": "how about power nap ?",
+          "timestamp": "2026-01-15T14:24:58.857838",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Power naps can be a fantastic way to boost focus and refresh your mind! Here\u2019s a structured breakdown of how to effectively use power naps while studying:\n\n**1. Understand the Ideal Duration**\n- **Quick Nap:** Aim for about 10-20 minutes. This keeps you in a light sleep, making it easier to wake up without grogginess.\n- **Longer Nap:** If you're feeling particularly drained, a 90-minute nap allows you to complete a full sleep cycle, which can help with memory consolidation.\n\n**2. Choose the Right Time**\n- Schedule your nap for early afternoon, ideally after lunch. This is when many people naturally feel a dip in energy.\n\n**3. Create a Restful Environment**\n- Find a quiet, dark place to nap. Use an eye mask or blackout curtains if necessary.\n- Consider using earplugs or white noise apps to block out distractions.\n\n**4. Set an Alarm**\n- Use your phone (on silent) or a timer to ensure you don\u2019t sleep too long. This helps avoid waking up groggy.\n\n**5. Refresh Post-Nap**\n- After waking up, take a moment to stretch and rehydrate. This can help you shake off any sleepiness.\n\n**6. Plan a Study Session After Napping**\n- Have a clear study goal for when you wake up. This will help you dive back into studying with renewed energy and focus.\n\n**Example Scenario:**\nImagine you\u2019ve been studying algorithms for a while, and your concentration starts to wane. You decide to take a 20-minute power nap. You set your alarm, find a cozy spot, and close your eyes. After your nap, you wake up feeling refreshed and ready to tackle a problem set on sorting algorithms. \n\nWould you like to try incorporating power naps into your study routine? If so, how do you plan to schedule them?",
+          "timestamp": "2026-01-15T14:25:08.393964",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Focus & Productivity Tips",
+      "topics": [
+        "study tips",
+        "focus",
+        "productivity",
+        "pomodoro"
+      ],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 6,
+          "motivation": 5,
+          "timestamp": "2026-01-13T13:58:00.000000"
+        }
+      }
+    },
+    "2026-01-10": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "I just failed a practice quiz and I'm feeling really discouraged. What should I do?",
+          "timestamp": "2026-01-10T16:00:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "First, I want you to know that failing a practice quiz is completely normal and actually valuable! It shows you exactly where to focus.\n\nLet's reframe this:\n\n**The Good News:**\n- Practice quizzes are FOR making mistakes\n- You found your weak spots BEFORE the real exam\n- This is data, not defeat\n\n**Action Plan:**\n1. **Right now**: Take a 15-minute break. Get some water, take a walk.\n2. **Then**: Review the quiz - which questions did you miss?\n3. **Categorize**: Are they conceptual gaps or careless errors?\n4. **Focus**: Spend extra time on the weak areas\n\n**Remember:**\nYou mentioned your goal is to \"actually understand the core concepts well enough to explain them to someone else.\" A failed practice quiz is a step toward that - now you know what needs more work!\n\nWant to go through the topics you struggled with together?",
+          "timestamp": "2026-01-10T16:02:00.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        },
+        {
+          "role": "user",
+          "content": "Thanks, that helps. I think I struggled most with recursion problems.",
+          "timestamp": "2026-01-10T16:05:00.000000",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Recursion can be tricky! Let's tackle it together with your preferred approach - examples first!\n\n**Simple Example: Counting Down**\n```python\ndef countdown(n):\n    if n <= 0:        # Base case - when to STOP\n        print(\"Done!\")\n    else:\n        print(n)      # Do something\n        countdown(n-1) # Call yourself with smaller problem\n\ncountdown(3)  # Prints: 3, 2, 1, Done!\n```\n\n**The Two Key Parts:**\n1. **Base case**: When do we STOP? (n <= 0)\n2. **Recursive case**: How do we get CLOSER to stopping? (n-1)\n\n**Real-world Analogy:**\nThink of recursion like Russian nesting dolls:\n- Open a doll \u2192 find a smaller doll inside\n- Keep opening until you reach the smallest one (base case)\n- Then you \"return\" back out\n\n**Common Mistake:**\nForgetting the base case = infinite loop (stack overflow!)\n\nWant to try a practice problem together? I'll guide you step by step!",
+          "timestamp": "2026-01-10T16:08:00.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Recursion After Failed Quiz",
+      "topics": [
+        "encouragement",
+        "recursion",
+        "problem-solving"
+      ],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 2,
+          "motivation": 3,
+          "timestamp": "2026-01-10T15:58:00.000000"
+        }
+      }
+    },
+    "2026-01-07": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "What do you know about me?",
+          "timestamp": "2026-01-07T09:01:18.584034",
+          "feedback": {}
+        },
+        {
+          "role": "assistant",
+          "content": "Based on our conversation, here's what I know about you:\n\n**Academic Background:**\n- 22-year-old Computer Science student in semester 4\n- Currently focusing on: Data Structures & Algorithms, Database Systems, Software Engineering, and Linear Algebra\n\n**Your Goals:**\n- Pass all exams with at least a 2.0 grade\n- Complete group projects without last-minute stress\n- Truly understand core concepts (not just memorize)\n- Build a side project using what you've learned\n\n**Learning Style:**\n- You prefer step-by-step explanations with examples first\n- You like real-world analogies and code examples\n- You work best in 30-45 minute focused sessions\n- You appreciate multiple examples to solidify concepts\n\n**Challenges:**\n- Sometimes procrastinate or underestimate time needed\n- Can struggle when concepts build on things not fully understood\n- Prefer understanding over memorization\n\n**What Motivates You:**\n- Problem-solving challenges\n- Applying theory to practical projects\n\nIs there anything you'd like to add or correct?",
+          "timestamp": "2026-01-07T09:02:00.000000",
+          "feedback": {
+            "thumbs_up": 1,
+            "thumbs_down": 0
+          }
+        }
+      ],
+      "summary": "Profile & Preferences Review",
+      "topics": [
+        "introduction",
+        "profile review"
+      ],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 6,
+          "motivation": 7,
+          "timestamp": "2026-01-07T09:00:00.000000"
+        }
+      }
+    },
+    "2026-01-20": {
+      "messages": [],
+      "summary": "",
+      "topics": [],
+      "emotional_data": {
+        "pre_session": {
+          "confidence": 9,
+          "motivation": 9,
+          "timestamp": "2026-01-20T00:48:06.128855"
+        }
       }
     }
-  ],
-  "2025-12-10": [
-    {
-      "role": "user",
-      "content": "Introduce yourself!",
-      "timestamp": "2025-12-10T18:18:16.718812",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "Hello! I'm Persona AI, your personalized assistant here to help you with your learning journey. I focus on providing structured, step-by-step explanations and real-world examples, especially in areas like Statistics, AI, ML, and Data Science. My goal is to support you in achieving your academic objectives while making the process as clear and engaging as possible. If you have any questions or topics you\u2019d like to explore, feel free to ask!",
-      "timestamp": "2025-12-10T18:18:20.902981",
-      "feedback": {
-        "thumbs_up": 0,
-        "thumbs_down": 0
-      }
-    }
-  ],
-  "2025-12-18": [
-    {
-      "role": "user",
-      "content": "How should I study to get better grades in this semester?",
-      "timestamp": "2025-12-18T09:36:40.815463",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "To improve your grades this semester, particularly in your focus areas like Statistics, AI, ML, and Data Science, consider the following structured approach:\n\n1. **Set Clear Goals**: Aim for specific learning objectives for each subject. For instance, you might want to master a specific statistical method or algorithm in AI.\n\n2. **Create a Study Schedule**: Since you prefer a regular study rhythm, allocate specific times each week for each topic. Stick to your 1-2 hour focus sessions, and remember to take short breaks to recharge.\n\n3. **Use Step-by-Step Learning**: Break down complex topics into manageable sections. Start with the basics and gradually move to more advanced concepts. For example, when studying a new algorithm, first understand the underlying theory before diving into its implementation.\n\n4. **Utilize Real-World Examples**: Look for case studies or practical applications of the concepts you're learning. This will help you see the relevance and make the material more relatable.\n\n5. **Practice, Practice, Practice**: Engage with practice problems regularly. Since you enjoy structured practice, find exercises that are aligned with your current topics. Use spaced repetition to revisit challenging problems over time.\n\n6. **Seek Feedback**: Don\u2019t hesitate to ask for help from peers or instructors when you feel confused. Engaging in discussions can clarify doubts and deepen your understanding.\n\n7. **Revise Regularly**: After learning new concepts, summarize what you\u2019ve learned. This will reinforce your memory and help you identify areas that need more attention.\n\n8. **Stay Motivated**: Remember your motivation to invest time to improve. Set small rewards for achieving your study goals to keep your spirits high.\n\nBy following these steps, you'll create a structured and effective study environment that caters to your learning preferences and helps you achieve your desired grades. Good luck!",
-      "timestamp": "2025-12-18T09:36:49.641525",
-      "feedback": {
-        "thumbs_up": 1,
-        "thumbs_down": 0
-      }
-    },
-    {
-      "role": "user",
-      "content": "What should I do when I am stressed?",
-      "timestamp": "2025-12-18T09:37:18.840834",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "When you feel stressed, especially while studying or tackling new concepts, here are some step-by-step strategies to help you manage that stress effectively:\n\n1. **Take a Short Break**: Step away from your study materials for a few minutes. Use this time to stretch, go for a short walk, or simply relax. A brief change of scenery can refresh your mind.\n\n2. **Practice Deep Breathing**: Spend a few minutes focusing on your breath. Inhale deeply through your nose, hold for a moment, and then exhale slowly through your mouth. Repeat this several times to calm your nerves.\n\n3. **Reassess Your Study Plan**: If you're feeling overwhelmed, take a moment to look over your study schedule. Are you trying to tackle too much at once? If so, adjust your goals to be more manageable, breaking down tasks into smaller, more achievable steps.\n\n4. **Engage in a Quick Mindfulness Exercise**: Spend a few moments being present. Focus on your senses\u2014what you can see, hear, and feel around you. This can help ground you and bring your attention back to the moment.\n\n5. **Reach Out for Support**: Talk to a friend, classmate, or instructor about what you're feeling. Sometimes just expressing your thoughts can provide relief and clarity. They might offer insights or strategies that can help.\n\n6. **Use Visual Aids**: If you're struggling with a concept, create visual aids like diagrams or mind maps. This can help make abstract ideas more concrete and less overwhelming.\n\n7. **Reflect on Your Progress**: Take a moment to recall how far you\u2019ve come in your studies. Reflecting on your accomplishments can boost your confidence and reduce stress.\n\n8. **Incorporate Relaxation Techniques**: Consider integrating activities like yoga, meditation, or even light exercise into your routine. These can help reduce overall stress levels and improve your focus.\n\n9. **Stay Hydrated and Nourished**: Ensure you're drinking enough water and eating balanced meals. Physical well-being can have a significant impact on your mental state.\n\nBy incorporating these strategies, you can better manage stress and create a more conducive learning environment for yourself. Remember, it\u2019s okay to take things step by step!",
-      "timestamp": "2025-12-18T09:37:28.016196",
-      "feedback": {
-        "thumbs_up": 1,
-        "thumbs_down": 0
-      }
-    },
-    {
-      "role": "user",
-      "content": "give me a study schedule for tomorrow",
-      "timestamp": "2025-12-18T09:39:07.514816",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "Here's a structured study schedule for tomorrow that aligns with your preferences and aims to make the most of your study time:\n\n### Study Schedule for Tomorrow\n\n**Morning:**\n\n- **9:00 AM - 9:30 AM**: Review notes from previous lectures on Statistics.\n  - Focus on key concepts and definitions.\n  \n- **9:30 AM - 10:15 AM**: Practice Statistics problems.\n  - Aim for 5-7 mixed problems to apply the concepts you've just reviewed.\n\n- **10:15 AM - 10:30 AM**: **Short Break**\n  - Stretch or take a quick walk to refresh your mind.\n\n- **10:30 AM - 11:15 AM**: Study AI fundamentals.\n  - Read through your textbook or lecture notes, focusing on a specific topic (e.g., neural networks).\n\n**Afternoon:**\n\n- **11:15 AM - 12:00 PM**: Work on a practical example related to AI.\n  - Implement a simple neural network using a programming language of your choice.\n\n- **12:00 PM - 1:00 PM**: **Lunch Break**\n  - Take this time to relax and recharge.\n\n- **1:00 PM - 1:45 PM**: Dive into Machine Learning concepts.\n  - Use a combination of textbooks and online resources, focusing on supervised vs. unsupervised learning.\n\n- **1:45 PM - 2:00 PM**: **Short Break**\n  - Grab a snack and take a mental breather.\n\n- **2:00 PM - 2:45 PM**: Engage with practice problems in Data Science.\n  - Focus on data manipulation and analysis tasks.\n\n**Evening:**\n\n- **2:45 PM - 3:30 PM**: Review what you've learned throughout the day.\n  - Create a summary of key points and concepts.\n\n- **3:30 PM - 4:00 PM**: **Short Break**\n  - Relax and do something enjoyable away from your study materials.\n\n- **4:00 PM - 5:00 PM**: Explore a new concept or topic you're curious about.\n  - This could be an area you find abstract or challenging. Use step-by-step resources to guide you.\n\n- **5:00 PM - 5:30 PM**: Wind down with light revision.\n  - Go over flashcards or summaries to reinforce what you've learned.\n\n### Tips:\n- Adjust the time slots based on your attention span and energy levels.\n- Stay hydrated and take care of your physical needs throughout the day.\n- If you feel overwhelmed at any point, remember to use your short breaks to reset.\n\nFeel free to modify this schedule according to your needs, but keeping it structured will help you stay on track. Good luck with your studies!",
-      "timestamp": "2025-12-18T09:39:21.193637",
-      "feedback": {
-        "thumbs_up": 0,
-        "thumbs_down": 1
-      }
-    }
-  ],
-  "2026-01-07": [
-    {
-      "role": "user",
-      "content": "What do you know about me?",
-      "timestamp": "2026-01-07T09:01:18.584034",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "Based on the information you've shared, you're a 22-year-old student in your 5th semester of an Informatics program, focusing on Statistics, AI, ML, and Data Science. You aim for good grades, around a 1.7.\n\nYour learning style is structured and example-driven, and you prefer step-by-step explanations with real-world examples. You like detailed information and appreciate mixed presentation styles. You\u2019re motivated to improve, but sometimes feel overwhelmed by new concepts and abstract ideas, and you find clarity helps you overcome confusion.\n\nYou study regularly for 1-2 hours at a time, taking short breaks to recover your focus. You tend to handle mistakes by deferring them for later reflection and prefer spaced repetition for reinforcement.\n\nYou communicate in a conversational tone and appreciate supportive, direct feedback. Summaries after explanations are helpful for you, and you engage with questions to deepen your understanding. \n\nIf there's anything more specific you'd like to share or ask about, feel free!",
-      "timestamp": "2026-01-07T09:01:27.342638",
-      "feedback": {
-        "thumbs_up": 1,
-        "thumbs_down": 0
-      }
-    },
-    {
-      "role": "user",
-      "content": "should i study more than this to achieve better grades?",
-      "timestamp": "2026-01-07T09:01:54.412130",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "To achieve better grades, especially aiming for around a 1.7, it's important to find a balance in your study approach. Here are a few strategies tailored to your learning preferences:\n\n1. **Regular Study Sessions**: Since you prefer studying regularly for 1-2 hours, consider maintaining that rhythm but perhaps adding an extra session each week or lengthening your existing sessions slightly, if possible. \n\n2. **Structured Review**: Incorporate structured reviews into your study routine. Use spaced repetition for key concepts, which will help reinforce your learning over time.\n\n3. **Practice Problems**: Since you like practice problems, ensure you're dedicating time to work on these, especially in Statistics, AI, and Data Science. Real-world applications of these subjects can enhance your understanding.\n\n4. **Seek Help When Overwhelmed**: If you start feeling confused or overwhelmed by abstract ideas, don\u2019t hesitate to seek help. This could be from peers, instructors, or additional resources. Breaking down complex topics into simpler parts can help.\n\n5. **Utilize Examples**: As you learn new concepts, try to relate them to real-world scenarios. This can make abstract ideas more tangible and easier to grasp.\n\n6. **Feedback and Reflection**: After you complete practice problems or assignments, take time to reflect on what you did well and where you can improve. This aligns with your preference for supportive, direct feedback.\n\nWhile studying more can help, make sure it's effective studying. Quality often trumps quantity, especially when you're focusing on understanding concepts deeply. Would you like to discuss specific subjects or strategies further?",
-      "timestamp": "2026-01-07T09:02:02.333109",
-      "feedback": {
-        "thumbs_up": 0,
-        "thumbs_down": 0
-      }
-    },
-    {
-      "role": "user",
-      "content": "Can I get better grades without studying?",
-      "timestamp": "2026-01-07T09:02:46.692878",
-      "feedback": {}
-    },
-    {
-      "role": "assistant",
-      "content": "While it's theoretically possible to improve your grades without studying, it's highly unlikely to achieve your goal of around a 1.7 without putting in the necessary effort. Here are a few reasons why studying is essential:\n\n1. **Understanding Concepts**: Subjects like Statistics, AI, ML, and Data Science rely on understanding complex concepts and theories. Without studying, it's challenging to grasp these ideas fully.\n\n2. **Practice Application**: Many fields, especially in informatics, require applying knowledge to solve problems. Regular practice helps reinforce what you've learned and builds confidence in your abilities.\n\n3. **Preparation for Exams**: Exams often cover material that requires not only understanding but also the ability to apply that knowledge under time constraints. Studying prepares you for this.\n\n4. **Retention of Information**: Spaced repetition and consistent study habits help with retention. Without studying, it's easy to forget important information over time.\n\n5. **Engagement with Material**: Studying actively engages you with the course material, making it more likely you'll remember and apply what you learn.\n\nIf you're looking for ways to study more effectively, rather than just more hours, we can focus on strategies that align with your preferences and help you understand the material better. Would you like to explore that?",
-      "timestamp": "2026-01-07T09:02:54.735819",
-      "feedback": {
-        "thumbs_up": 0,
-        "thumbs_down": 1
-      }
-    }
-  ]
+  },
+  "global_context": {
+    "topics_covered": [
+      "study planning",
+      "focus tips",
+      "recursion",
+      "vector spaces",
+      "motivation"
+    ],
+    "total_sessions": 4,
+    "last_updated": "2026-01-15"
+  }
 }
